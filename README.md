@@ -24,7 +24,7 @@ ps, talking of feedback... I wanted to set up a more logical sequence of compila
 ![calculatecpp1](https://user-images.githubusercontent.com/40922682/114449789-18b44380-9bcd-11eb-8cb9-fda588d49695.JPG)
 
 I, however, ran into a problem of converting the counted_lines vector as an argument (user defined Line type and struct in the renderer.h file) into the euclidean_length function's parameter in the calculate file. I whittled down the error messaging to:
-'no conversion between std::vector<Renderer::Render::Line> and std::vector<Calculate::Line> exists', and then to: 'no conversion between std::vector<Line> and std::vector<Line>' exists.
+'no conversion between std::vector(Renderer::Render::Line) and std::vector(Calculate::Line) exists', and then to: 'no conversion between std::vector(Line) and std::vector(Line)' exists.
   
 I tried:
 
