@@ -13,7 +13,30 @@ Here is what you should see when you're up and running.
 ![That's Add-Surd](https://user-images.githubusercontent.com/40922682/114428960-ba7b6680-9bb4-11eb-91f3-eed0a35d884a.JPG)
 
 
+I hope you enjoy. Any feedback on the code very much appreciated.
 
+Thanks,
+
+Toby
+
+ps, talking of feedback... I wanted to set up a more logical sequence of compilation units by adding a cpp file and header file that separated the below calculation and final summing up from the rendering. A key part of this was the passing of the (below) counted_lines vector to a euclid_length function organised as this screen-shotted For loop: 
 
 ![calculatecpp1](https://user-images.githubusercontent.com/40922682/114449789-18b44380-9bcd-11eb-8cb9-fda588d49695.JPG)
-![calculatecpp2](https://user-images.githubusercontent.com/40922682/114449889-3b465c80-9bcd-11eb-801f-8d91299d8b17.JPG)
+
+I, however, ran into a problem of converting the counted_lines vector as an argument (user defined Line type and struct in the renderer.h file) into the euclidean_length function's paramter in the calculate file. I whittled down the error messaging to:
+'no conversion between std::vector<Renderer::Render::Line> and std::vector<Calculate::Line> exists', and then to: 'no conversion between std::vector<Line> and std::vector::Line' exists.
+  
+I tried:
+
+1)static cast.
+2)re-ordering header file includes
+3)putting a space after the header file includes
+4)conversion functions 
+5)replacing the original struct (both declaration and definition) in any number of positions.
+6)staring forlornly at the idea of writing my own allocator function and chickening out.
+7)and finally making a deal with Devil and dynamic-casting (sorry world).
+
+Nothing worked. I couldn't get the argument accepted as a parameter in the calculate.cpp file. In the end I fell back on 'The Best is the enemy of the good' and went back to the above format which, at least, worked.
+Again, any tips on this much appreciated.
+
+Toby
