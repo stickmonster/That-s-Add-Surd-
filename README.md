@@ -40,3 +40,11 @@ Nothing worked. I couldn't get the argument accepted as a parameter in the calcu
 Again, any tips on this much appreciated.
 
 Toby
+
+ps, having tested this, I realise the gameplay does not reach its aim of testing the player's mathematical ability. Instead, it becomes a spaghetti free-for-all of drawing as many lines in as short a time as possible. To actually cause some thought in its players, That's Add-Surd's next iterations will need:
+- timing for each line instead of the whole game, or as well as
+- a two player system
+- which means the points from any crossing lines will have to be discounted (necessitating simultaneous equations to discern if the lines do, in fact, cross)
+- and, eventually, an AI computer opponent with differing levels of difficulty
+
+
