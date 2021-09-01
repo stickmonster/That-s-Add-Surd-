@@ -23,6 +23,7 @@ int main() {
     
     Renderer renderer(kScreenWidth, kScreenHeight, kGridWidth, kGridHeight);
 
+    
     Game game(kGridWidth, kGridHeight);
         
 
