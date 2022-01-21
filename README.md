@@ -1,6 +1,6 @@
 
 
-Much like life, 'That's Add-Surd!' is a game where being irrational is a plus and rationality is a negative. In this game you have to create unique irrational length lines. For each unique line you create you score the length of the line. However, if the line is rationalisable, you lose the length of that line from your score. Only those lines connected to the yellow blocks count for the scoring. You have 27.182818 seconds to score more than 31.4159265359 points in order to beat the game!
+Much like life, 'That's Add-Surd!' is a game where being irrational is a plus and rationality is a negative... In this game you have to create unique irrational length lines. For each unique line you create you score the length of the line. However, if the line is rationalisable, you lose the length of that line from your score. Only those lines connected to the yellow blocks count for the scoring. You have 27.182818 seconds to score more than 31.4159265359 points in order to beat the game!
 
 That's Add-Surd! is set in the SDL2 specification. In order to get the project running on your system, you will need the SDL2 development libraries, and to include and add the library files in the Project menu. The steps for this are in these two videos:
 
